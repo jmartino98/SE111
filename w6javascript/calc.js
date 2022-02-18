@@ -14,6 +14,7 @@ function dataPrompt() {
     var netPayResult = Number(grossPayResult) - Number(uncleSamsShare)
     
     
+    
     document.querySelector('span').innerHTML = `
     Gross Pay: $${grossPayResult}
     Uncle Sams Share: $${uncleSamsShare}
@@ -23,5 +24,6 @@ function dataPrompt() {
     Gross Pay: $${grossPayResult}
     Uncle Sams Share: $${uncleSamsShare}
     Net Pay: $${netPayResult}`)
+    
 
 }
