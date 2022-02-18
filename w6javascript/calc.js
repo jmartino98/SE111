@@ -8,13 +8,13 @@ function dataPrompt() {
     var hourlyPayNumber = prompt('Enter your hourly pay', 'Hourly Pay')
     var hoursWorkedNumber = prompt('Enter the amount of hours youve worked this week', 'Hours Worked This Week')
     var taxRateNumber = prompt('Enter the tax rate', 'Tax Rate')
-    
+
     var grossPayResult = Number(hourlyPayNumber) * Number(hoursWorkedNumber)
     var uncleSamsShare = Number(grossPayResult) * Number(taxRateNumber)
     var netPayResult = Number(grossPayResult) - Number(uncleSamsShare)
-    
-    
-    
+
+
+
     document.querySelector('span').innerHTML = `
     Gross Pay: $${grossPayResult}
     Uncle Sams Share: $${uncleSamsShare}
@@ -24,6 +24,6 @@ function dataPrompt() {
     Gross Pay: $${grossPayResult}
     Uncle Sams Share: $${uncleSamsShare}
     Net Pay: $${netPayResult}`)
-    
+
 
 }
