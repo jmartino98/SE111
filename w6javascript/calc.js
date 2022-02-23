@@ -15,15 +15,19 @@ function dataPrompt() {
 
 
 
-    document.querySelector('span').innerHTML = `
-    Gross Pay: $${grossPayResult}
-    Uncle Sams Share: $${uncleSamsShare}
-    Net Pay: $${netPayResult}`
+
+    document.querySelector('span').innerHTML =`
+    Gross Pay: $${grossPayResult.toFixed(2)}
+    <br>
+    Uncle Sams Share: $${uncleSamsShare.toFixed(2)}
+    <br>
+    Net Pay: $${netPayResult.toFixed(2)}`
 
     console.log(`
     Gross Pay: $${grossPayResult}
     Uncle Sams Share: $${uncleSamsShare}
     Net Pay: $${netPayResult}`)
+
 
 
 }
