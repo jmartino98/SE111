@@ -24,9 +24,9 @@ function dataPrompt() {
     Net Pay: $${netPayResult.toFixed(2)}`
 
     console.log(`
-    Gross Pay: $${grossPayResult}
-    Uncle Sams Share: $${uncleSamsShare}
-    Net Pay: $${netPayResult}`)
+    Gross Pay: $${grossPayResult.toFixed(2)}
+    Uncle Sams Share: $${uncleSamsShare.toFixed(2)}
+    Net Pay: $${netPayResult.toFixed(2)}`)
 
 
 
